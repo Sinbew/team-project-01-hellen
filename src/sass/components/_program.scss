@@ -138,6 +138,8 @@
   //   width: 280px;
 }
 .benefits__item {
+  outline: 1 solid green;
+  margin-bottom: 36px;
 }
 .benefits__number {
   margin-top: 0;
@@ -149,15 +151,18 @@
   color: #ff6b09;
 }
 .benefits__text {
-  margin-bottom: 36px;
-
   font-weight: 700;
   font-size: 14px;
   line-height: 1.43;
   letter-spacing: 0.08em;
   color: var(--title-color);
 
-  &:last-child {
-    margin-bottom: 0;
-  }
+  //   &:last-child {
+  //     margin-bottom: 0;
+  //   }
+}
+
+.benefits__part {
+  display: flex;
+  flex-direction: row;
 }
