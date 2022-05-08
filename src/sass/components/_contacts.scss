@@ -7,6 +7,11 @@
     url(../images/mobile/contacts/contacts-mobile-1x.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+
+  @include mq(retina) {
+    background-image: linear-gradient(to right, rgba(36, 36, 36, 0.85), rgba(36, 36, 36, 0.85)),
+      url(../images/mobile/contacts/contacts-mobile-2x.jpg);
+  }
 }
 .container {
 }
