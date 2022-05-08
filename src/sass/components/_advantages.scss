@@ -12,7 +12,7 @@
 .advantages__list {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 25px;
 }
 
 .advantages__item {
@@ -27,27 +27,25 @@
     height: 60px;
     
     margin-right: 10px;
-
-    // outline: 1px solid tomato;
 }
 
-// .advantages__item--authors::before {
-//     background-image: url(./images/icons/autors.svg);
-//     background-size: contain;
-//     background-repeat: no-repeat;
-// }
+.advantages__item--authors::before {
+    background-image: url(../images/icons/autors.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
 
-// .advantages__item--teaching::before {
-//     background-image: url(../images/icons/icons.svg#icon-teaching);
-//     background-size: contain;
-//     background-repeat: no-repeat;
-// }
+.advantages__item--teaching::before {
+    background-image: url(../images/icons/teaching.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
 
-// .advantages__item--financial::before {
-//     background-image: url(../images/icons/icons.svg#icon-financial);
-//     background-size: contain;
-//     background-repeat: no-repeat;
-// 
+.advantages__item--financial::before {
+    background-image: url(../images/icons/financial.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
 
 .advantages__text {
     font-weight: 700;
@@ -56,4 +54,16 @@
     letter-spacing: 0.08em;
 
     color: var(--title-color);
+}
+
+.advantages__text--authors {
+    width: 146px;
+}
+
+.advantages__text--teaching {
+    width: 80px;
+}
+
+.advantages__text--financial {
+    width: 90px;
 }
