@@ -31,23 +31,23 @@
     // outline: 1px solid tomato;
 }
 
-.advantages__item--authors::before {
-    background-image: url(../images/icons/autors.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
-}
+// .advantages__item--authors::before {
+//     background-image: url(./images/icons/autors.svg);
+//     background-size: contain;
+//     background-repeat: no-repeat;
+// }
 
-.advantages__item--teaching::before {
-    background-image: url(../images/icons/icons.svg#icon-teaching);
-    background-size: contain;
-    background-repeat: no-repeat;
-}
+// .advantages__item--teaching::before {
+//     background-image: url(../images/icons/icons.svg#icon-teaching);
+//     background-size: contain;
+//     background-repeat: no-repeat;
+// }
 
-.advantages__item--financial::before {
-    background-image: url(../images/icons/icons.svg#icon-financial);
-    background-size: contain;
-    background-repeat: no-repeat;
-}
+// .advantages__item--financial::before {
+//     background-image: url(../images/icons/icons.svg#icon-financial);
+//     background-size: contain;
+//     background-repeat: no-repeat;
+// 
 
 .advantages__text {
     font-weight: 700;
