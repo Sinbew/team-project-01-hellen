@@ -31,11 +31,16 @@
   border-left: 1px solid rgba(255, 255, 255, 1);
 }
 .program__item {
-  //   position: relative;
-  //   display: block;
+  margin-top: 40px;
+
+  &:first-child {
+    margin-top: 0;
+  }
 }
 .program__subtitle {
-  //   position: relative;
+  // outline: 1px solid green;
+  display: block;
+  height: 28px;
   margin-top: 0;
   padding-top: 0;
   margin-bottom: 5px;
@@ -50,9 +55,12 @@
 .program__sublist {
 }
 .program__subitem--title {
+  // margin-bottom: 40px;
 }
 .program__name {
-  //   outline: 1px solid red;
+  display: flex;
+  height: 32px;
+  // outline: 1px solid red;
   margin-bottom: 5px;
   font-weight: 700;
   font-size: 12px;
@@ -61,14 +69,6 @@
   letter-spacing: 0.08em;
   color: #ff6b09;
 }
-// .program__name::before {
-//   position: absolute;
-//   display: flex;
-//   content: '';
-//   width: 10px;
-//   height: 1px;
-//   color: yellow;
-// }
 
 .program__subitem {
   &:last-child {
@@ -88,14 +88,10 @@
   color: rgba(185, 185, 185, 1);
 }
 
-// .program__title--benefits {
-//   width: 180px;
-// }
-
 .benefits__thumb {
   z-index: 1000;
   position: absolute;
-  top: 1500px;
+  top: 1643px;
   left: 20px;
   padding: 20px 14px 20px 30px;
   background-color: var(--white-color);
@@ -106,7 +102,7 @@
 }
 
 .section__benefits {
-  background-color: red;
+  // background-color: red;
   //   z-index: 1000;
   //   position: absolute;
   //   top: 1500px;
@@ -119,16 +115,6 @@
   //   margin-right: auto;
 }
 
-.program__title-benefits {
-  margin-bottom: 30px;
-  width: 180px;
-  font-weight: 800;
-  font-size: 20px;
-  line-height: 1.36;
-  letter-spacing: 0.03em;
-  color: #ffffff;
-}
-
 // .container-benefits {
 //   width: 280px;
 // }
@@ -138,7 +124,7 @@
   //   width: 280px;
 }
 .benefits__item {
-  outline: 1 solid green;
+  // outline: 1 solid green;
   margin-bottom: 36px;
 }
 .benefits__number {
@@ -163,6 +149,24 @@
 }
 
 .benefits__part {
-  display: flex;
-  flex-direction: row;
+}
+
+.program__title-benefits {
+  // display: flex;
+  width: 180px;
+  position: absolute;
+  top: 1563px;
+  left: 20px;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.36;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+.program__img {
+  position: absolute;
+  top: 1473px;
+  right: 0;
+  width: 120px;
+  opacity: 0.5;
 }
