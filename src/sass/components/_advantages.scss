@@ -1,0 +1,59 @@
+
+.advantages {
+    padding-top: 30px;
+    padding-bottom: 44px;
+}
+
+.advantages__container {
+    padding-left: 52px;
+    padding-right: 52px;
+}
+
+.advantages__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.advantages__item {
+    display: flex;
+    align-items: center;
+}
+
+.advantages__item::before {
+    display: block;
+    content: "";
+    width: 60px;
+    height: 60px;
+    
+    margin-right: 10px;
+
+    // outline: 1px solid tomato;
+}
+
+.advantages__item--authors::before {
+    background-image: url(../images/icons/autors.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.advantages__item--teaching::before {
+    background-image: url(../images/icons/icons.svg#icon-teaching);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.advantages__item--financial::before {
+    background-image: url(../images/icons/icons.svg#icon-financial);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.advantages__text {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.64;
+    letter-spacing: 0.08em;
+
+    color: var(--title-color);
+}
