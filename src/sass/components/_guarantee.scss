@@ -1,0 +1,56 @@
+.guarantee {
+  padding-top: 50px;
+
+  @include mq(mobile) {
+    width: 490px;
+    @include margin-auto;
+  }
+
+  @include mq(tablet) {
+    width: 768px;
+  }
+
+  @include mq(desktop) {
+    width: 1366px;
+  }
+}
+
+.guarantee__title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.guarantee__container {
+  background-color: #f1f1f1;
+  padding-left: 27px;
+  padding: 50px 20px;
+}
+
+.guarantee__list {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+  padding-left: 28px;
+
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.67;
+
+  border-left: 1px dashed #b9b9b9;
+
+  @include mq(desktop) {
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
+
+.guarantee__text::before {
+  position: absolute;
+  content: ' ';
+  background-image: url('../images/icons/fire.svg');
+  width: 15px;
+  height: 20px;
+  left: 0%;
+  transform: translate(-50%);
+}
