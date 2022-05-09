@@ -1,0 +1,152 @@
+.reviews {
+  @include margin-auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+
+  @include mq(mobile) {
+    width: 490px;
+  }
+}
+
+.reviews__container {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.reviews__title {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.reviews__main-img {
+  @include margin-auto;
+  margin-bottom: 30px;
+}
+
+.review__social-network-link {
+  display: block;
+  margin-bottom: 30px;
+}
+
+.reviews__social-network-icon {
+  fill: #4267b2;
+}
+
+.reviews__name {
+  margin-bottom: 16px;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.08em;
+  color: var(--accent-orange-color);
+}
+
+.reviews__main-info {
+  margin-bottom: 16px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.08em;
+  color: #b9b9b9;
+}
+
+.reviews__additional-info {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.reviews__additional-info-link {
+  color: var(--accent-orange-color);
+}
+// Slider
+.slider {
+  position: relative;
+}
+
+.slick-list {
+  overflow: hidden;
+}
+
+.slick-track {
+  display: flex;
+  justify-content: center;
+}
+
+.slick-arrow {
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  font-size: 0;
+  height: 20px;
+  width: 30px;
+  background-color: transparent;
+  border: none;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  &.slick-prev {
+    left: 0;
+    background-image: url('../images/icons/arrow-left.svg');
+  }
+
+  &.slick-next {
+    right: 0;
+    background-image: url('../images/icons/arrow-right.svg');
+  }
+}
+
+.slick-dots {
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+  margin-top: 62px;
+  & button {
+    border: none;
+    font-size: 0px;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+  }
+}
+
+.slick-active {
+  & button {
+    border: 1px solid #ff6b09;
+  }
+}
+
+#slick-slide00 button {
+  background-image: url('../images/mobile/reviews/review-1-1x.png');
+  background-size: contain;
+}
+#slick-slide01 button {
+  background-image: url('../images/mobile/reviews/review-2-1x.png');
+  background-size: contain;
+}
+#slick-slide02 button {
+  background-image: url('../images/mobile/reviews/review-3-1x.png');
+  background-size: contain;
+}
+#slick-slide03 button {
+  background-image: url('../images/mobile/reviews/review-4-1x.png');
+  background-size: contain;
+}
+#slick-slide04 button {
+  background-image: url('../images/mobile/reviews/review-5-1x.png');
+  background-size: contain;
+}
+#slick-slide05 button {
+  background-image: url('../images/mobile/reviews/review-6-1x.png');
+  background-size: contain;
+}
+
+#slick-slide06 button {
+  background-image: url('../images/mobile/reviews/review-7-1x.png');
+  background-size: contain;
+}
+#slick-slide07 button {
+  background-image: url('../images/mobile/reviews/review-1-1x.png');
+  background-size: contain;
+}
