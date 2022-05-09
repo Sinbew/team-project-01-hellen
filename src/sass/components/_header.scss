@@ -12,10 +12,6 @@
   opacity: 1;
 }
 
-.header__menu-icon-close {
-  opacity: 0;
-}
-
 .header__burger-button {
   position: relative;
   z-index: 100;
@@ -42,8 +38,15 @@
   opacity: 0;
 }
 
-.menu-button.is-open .header__menu-icon-close {
+.header__burger-close {
+  opacity: 0;
+}
+
+.header__burger-button.is-open .header__burger-close {
   opacity: 1;
+}
+.menu-button.is-open .header__burger-open {
+  opacity: 0;
 }
 
 // Модальное окно
