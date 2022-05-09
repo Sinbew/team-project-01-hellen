@@ -7,6 +7,9 @@
   @include mq(mobile) {
     width: 490px;
   }
+  @include mq(tablet) {
+    width: 768px;
+  }
 }
 
 .reviews__container {
