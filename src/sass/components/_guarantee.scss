@@ -1,5 +1,18 @@
 .guarantee {
   padding-top: 50px;
+
+  @include mq(mobile) {
+    width: 490px;
+    @include margin-auto;
+  }
+
+  @include mq(tablet) {
+    width: 768px;
+  }
+
+  @include mq(desktop) {
+    width: 1366px;
+  }
 }
 
 .guarantee__title {
@@ -15,16 +28,21 @@
 
 .guarantee__list {
   position: relative;
-  padding-left: 28px;
   display: flex;
   flex-direction: column;
-  flex-wrap: nowrap;
   gap: 23px;
+  padding-left: 28px;
+
   font-weight: 500;
   font-size: 12px;
-  line-height: 20px;
-  /* or 167% */
+  line-height: 1.67;
+
   border-left: 1px dashed #b9b9b9;
+
+  @include mq(desktop) {
+    font-size: 20px;
+    line-height: 28px;
+  }
 }
 
 .guarantee__text::before {
@@ -34,6 +52,5 @@
   width: 15px;
   height: 20px;
   left: 0%;
-  top: 0%;
   transform: translate(-50%);
 }
