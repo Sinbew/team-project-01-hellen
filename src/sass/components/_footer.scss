@@ -1,0 +1,54 @@
+.container {
+}
+
+.footer {
+  padding-top: 30px;
+  padding-bottom: 0;
+}
+
+.footer__container {
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.footer__tel {
+  display: flex;
+  gap: 10px;
+
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
+
+  letter-spacing: 0.08em;
+
+  color: #111518;
+}
+
+.copyright {
+  display: flex;
+  justify-content: center;
+  padding: 21px 0;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 2;
+
+  color: #b9b9b9;
+
+  background-color: #111518;
+}
+
+.footer__social {
+  width: 40px;
+  height: 40px;
+  background-image: url(../images/Icons/instagram-1x.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  @include mq(retina) {
+    background-image: url(../images/Icons/instagram-2x.png);
+  }
+}
