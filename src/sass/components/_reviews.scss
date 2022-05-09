@@ -76,7 +76,7 @@
 
 .slick-arrow {
   position: absolute;
-  top: 50%;
+  // top: 50%;
   z-index: 10;
   font-size: 0;
   height: 20px;
@@ -87,26 +87,28 @@
   background-size: contain;
 
   &.slick-prev {
-    left: 0;
+    left: 110px;
+    bottom: 18px;
     background-image: url('../images/icons/arrow-left.svg');
   }
 
   &.slick-next {
-    right: 0;
+    right: 110px;
+    bottom: 18px;
     background-image: url('../images/icons/arrow-right.svg');
   }
 }
 
 .slick-dots {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   gap: 10px;
   margin-top: 62px;
   & button {
     border: none;
     font-size: 0px;
-    width: 30px;
-    height: 30px;
+    width: 54px;
+    height: 54px;
     border-radius: 100%;
   }
 }
