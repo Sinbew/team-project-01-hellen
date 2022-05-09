@@ -10,16 +10,14 @@ body {
 
   @include mq(mobile) {
     padding: 0 20px;
-    width: 320px;
+    width: 490px;
   }
 
   @include mq(tablet) {
-    padding: 0 40px;
     width: 768px;
   }
 
   @include mq(desktop) {
-    padding: 0 183px;
     width: 1366px;
   }
 }
