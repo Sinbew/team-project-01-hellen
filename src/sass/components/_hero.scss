@@ -1,12 +1,17 @@
 .hero {
   padding-top: 52px;
-
+  padding-bottom: 107px;
+  // background-color: bisque;
+  background-image: url(../images/hero-background/wave-tablet-1x.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  background-position: -55px;
   @include mq(tablet) {
     padding-top: 88px;
   }
 }
 .hero__container {
-  background-image: url(../images/hero-background/wave-mobile-1x.png);
 }
 
 .hero__title {
