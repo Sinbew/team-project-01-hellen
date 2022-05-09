@@ -156,6 +156,12 @@
   background-size: contain;
 }
 
+slick-slide {
+  @include mq(tablet) {
+    width: 768px;
+  }
+}
+
 /* hiding all bullets by default */
 .slick-dots li {
   @media screen and (max-width: 489px) {
