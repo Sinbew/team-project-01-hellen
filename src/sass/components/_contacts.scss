@@ -7,7 +7,6 @@
     url(../images/mobile/contacts/contacts-mobile-1x.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-
   @include mq(retina) {
     background-image: linear-gradient(to right, rgba(12, 12, 12, 0.75), rgba(12, 12, 12, 0.75)),
       url(../images/mobile/contacts/contacts-mobile-2x.jpg);
@@ -94,6 +93,10 @@
 }
 .contacts__form-label-phone {
   margin-bottom: 50px;
+
+  @include mq(tablet) {
+    margin-bottom: 31px;
+  }
 }
 
 .contacts__form-input {
