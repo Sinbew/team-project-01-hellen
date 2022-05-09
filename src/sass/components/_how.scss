@@ -62,8 +62,8 @@
   color: #ffffff;
 }
 
-.how__item:hover .how__item-title::after,
-.how__item:focus .how__item-title::after {
+.how__item:hover .how__item-text::before,
+.how__item:focus .how__item-text::before {
   background-color: #ffffff;
 }
 

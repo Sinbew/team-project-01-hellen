@@ -10,7 +10,7 @@
   transform: translateX(-50%);
   display: block;
   left: 50%;
-  width: 350px;
+  // width: 350px;
 }
 .benefits__list {
   // счетчик
@@ -75,11 +75,16 @@
 }
 
 .benefits__thumb {
+  position: relative;
+
+  margin-left: auto;
+  margin-right: auto;
   //   outline: 2px dashed red;
   display: flex;
   flex-direction: row;
   align-items: flex-end;
-  justify-content: center;
+  width: 280px;
+  padding-top: 88px;
 }
 
 .program__title-benefits {
@@ -92,7 +97,10 @@
   color: var(--white-color);
 }
 .program__img {
-  margin-right: -20px;
+  position: absolute;
+  // margin-right: -20px;
+  right: -20px;
+  top: 5px;
   width: 120px;
   opacity: 0.5;
 }
