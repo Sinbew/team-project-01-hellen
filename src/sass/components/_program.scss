@@ -74,7 +74,7 @@
     width: 12px;
     height: 12px;
     border-radius: 50%;
-    background-color: #ff6b09;
+    background-color: var(--accent-orange-color);
   }
 }
 
@@ -95,7 +95,7 @@
   line-height: 1.67;
   align-items: center;
   letter-spacing: 0.08em;
-  color: #ff6b09;
+  color: var(--accent-orange-color);
 
   &::before {
     content: '';
