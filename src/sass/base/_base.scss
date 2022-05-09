@@ -9,7 +9,6 @@ body {
   margin-right: auto;
 
   @include mq(mobile) {
-    padding: 0 20px;
     width: 490px;
   }
 
