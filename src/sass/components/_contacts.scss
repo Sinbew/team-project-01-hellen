@@ -2,29 +2,38 @@
   padding-top: 56px;
   padding-bottom: 55px;
 
-  //   background-color: #3a3a3a;
-  background-image: linear-gradient(to right, rgba(36, 36, 36, 0.85), rgba(36, 36, 36, 0.85)),
+  background-color: #3a3a3a;
+  background-image: linear-gradient(to right, rgba(12, 12, 12, 0.75), rgba(12, 12, 12, 0.75)),
     url(../images/mobile/contacts/contacts-mobile-1x.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-
   @include mq(retina) {
-    background-image: linear-gradient(to right, rgba(36, 36, 36, 0.85), rgba(36, 36, 36, 0.85)),
+    background-image: linear-gradient(to right, rgba(12, 12, 12, 0.75), rgba(12, 12, 12, 0.75)),
       url(../images/mobile/contacts/contacts-mobile-2x.jpg);
   }
+
+  @include mq(tablet) {
+    padding-top: 66px;
+    padding-bottom: 66px;
+
+    background-image: linear-gradient(to right, rgba(12, 12, 12, 0.75), rgba(12, 12, 12, 0.75)),
+      url(../images/tablet/contacts/contacts-tablet-1x.jpg);
+
+    @include mq(retina) {
+      background-image: linear-gradient(to right, rgba(12, 12, 12, 0.75), rgba(12, 12, 12, 0.75)),
+        url(../images/tablet/contacts/contacts-tablet-2x.jpg);
+    }
+  }
 }
-.container {
-}
-.contacts__container {
-}
+
 .contacts__title {
   display: block;
+
+  // max-width: 280px;
 
   margin-bottom: 24px;
   margin-left: auto;
   margin-right: auto;
-
-  max-width: 280px;
 
   font-weight: 800;
   font-size: 14px;
@@ -34,6 +43,12 @@
   letter-spacing: 0.03em;
 
   color: var(--white-color);
+
+  @include mq(tablet) {
+    margin-bottom: 50px;
+
+    font-size: 26px;
+  }
 }
 
 .contacts__text {
@@ -50,6 +65,15 @@
   letter-spacing: 0.08em;
 
   color: var(--white-color);
+
+  @include mq(tablet) {
+    max-width: 412px;
+
+    margin-bottom: 23px;
+
+    font-size: 14px;
+    line-height: 1.21;
+  }
 }
 
 .contacts-accent {
@@ -69,6 +93,10 @@
 }
 .contacts__form-label-phone {
   margin-bottom: 50px;
+
+  @include mq(tablet) {
+    margin-bottom: 31px;
+  }
 }
 
 .contacts__form-input {
@@ -81,6 +109,10 @@
 
   border: 1px solid var(--white-color);
   outline: none;
+
+  @include mq(tablet) {
+    width: 390px;
+  }
 }
 
 .contacts__form-input:invalid {
