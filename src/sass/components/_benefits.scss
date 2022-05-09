@@ -6,7 +6,7 @@
 
 .container-benefits {
   position: absolute;
-  top: -590px;
+  top: -585px;
   transform: translateX(-50%);
   display: block;
   left: 50%;
@@ -36,7 +36,7 @@
     // outline: 1px solid teal;
     counter-increment: section;
     content: counter(section, decimal-leading-zero);
-
+    display: block;
     margin-top: 0;
     margin-bottom: 10px;
     padding-left: 20px;
@@ -65,7 +65,7 @@
   &::before {
     content: '';
     display: block;
-    top: -13px;
+    top: -23px;
     position: absolute;
     display: flex;
     width: 14px;
