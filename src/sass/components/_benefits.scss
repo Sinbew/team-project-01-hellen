@@ -7,6 +7,9 @@
 .container-benefits {
   position: absolute;
   top: -590px;
+  transform: translateX(-50%);
+  display: block;
+  left: 50%;
 }
 .benefits__list {
   position: absolute;
@@ -76,5 +79,5 @@
 .program__img {
   margin-right: -20px;
   width: 120px;
-  opacity: 0.5;
+  //   opacity: 0.5;
 }
