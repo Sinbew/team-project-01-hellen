@@ -3,21 +3,34 @@
 
 .footer {
   padding-top: 30px;
-  padding-bottom: 0;
-
+  padding-bottom: 21px;
+  background-image: linear-gradient(180deg, rgb(255, 255, 255) 75%, rgba(17, 21, 24) 75%);
   @include mq(tablet) {
     padding-top: 40px;
+    background-image: linear-gradient(180deg, rgb(255, 255, 255) 62%, rgba(17, 21, 24) 62%);
+  }
+
+  @include mq(desktop) {
+    padding-top: 50px;
   }
 }
 
 .footer__container {
-  margin-bottom: 30px;
+}
+
+.footer__wrapper {
+  margin-bottom: 51px;
   display: flex;
   flex-direction: column;
   align-items: center;
 
   @include mq(tablet) {
     flex-direction: row;
+    margin-bottom: 62px;
+  }
+
+  @include mq(desktop) {
+    margin-bottom: 75px;
   }
 }
 
@@ -126,7 +139,6 @@
 .copyright {
   display: flex;
   justify-content: center;
-  padding: 21px 0;
 
   max-width: 1680px;
   margin-left: auto;
@@ -137,10 +149,9 @@
 
   color: #b9b9b9;
 
-  background-color: #111518;
+  // background-color: #111518;
 
   @include mq(tablet) {
     justify-content: flex-start;
-    padding-left: 20px;
   }
 }
