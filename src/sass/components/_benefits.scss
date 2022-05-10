@@ -51,8 +51,8 @@
   // счетчик
   &::before {
     position: relative;
-    // outline: 1px solid teal;
     counter-increment: section;
+    // content: '\2014'counter(section, decimal-leading-zero);
     content: counter(section, decimal-leading-zero);
     display: block;
     margin-top: 0;
@@ -119,7 +119,7 @@
   &::before {
     content: '';
     display: block;
-    top: -23px;
+    top: -22px;
     position: absolute;
     display: flex;
     width: 14px;
