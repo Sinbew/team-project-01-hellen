@@ -8,6 +8,11 @@
   @include mq(tablet) {
     padding-bottom: 392px;
   }
+
+  @include mq(desktop) {
+    padding-top: 120px;
+    padding-bottom: 363px;
+  }
 }
 
 .container__program {
@@ -17,6 +22,11 @@
   @include mq(tablet) {
     padding-left: 40px;
     padding-right: 40px;
+  }
+
+  @include mq(desktop) {
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 
@@ -33,13 +43,36 @@
     margin-bottom: 52px;
     text-align-last: left;
     font-size: 26px;
-    line-height: 1.3;
+  }
+
+  @include mq(desktop) {
+    font-size: 46px;
+    margin-bottom: 100px;
   }
 }
+
 .program__list {
   // outline: 1px solid yellow;
   position: relative;
   padding-left: 105px;
+
+  counter-reset: section;
+
+  &::before {
+    @include mq(desktop) {
+      content: '';
+      position: absolute;
+      top: -1px;
+      left: -20px;
+      display: block;
+      width: 1368px;
+      border-top: 1px solid var(--white-color);
+    }
+  }
+
+  @include mq(desktop) {
+    padding-top: 60px;
+  }
 
   &::after {
     content: '';
@@ -69,10 +102,44 @@
       border-left: 1px solid var(--white-color);
     }
   }
+
+  @include mq(desktop) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 0;
+
+    &::after {
+      border-left: none;
+    }
+
+    // счетчик
+    // counter-reset: section;
+    // list-style-type: upper-alpha;
+    // счетчик
+  }
+}
+
+.program__thumb {
+  @include mq(tablet) {
+    display: flex;
+    flex-direction: row;
+  }
+
+  @include mq(desktop) {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .program__item {
   margin-top: 40px;
+
+  &:last-child {
+    @include mq(desktop) {
+      margin-right: 0;
+    }
+  }
 
   &:first-child {
     margin-top: 0;
@@ -85,15 +152,22 @@
       margin-top: 0;
     }
   }
+
+  @include mq(desktop) {
+    position: relative;
+    margin-right: 30px;
+    margin-top: 0;
+    width: 240px;
+  }
 }
 .program__subtitle {
   // outline: 1px solid green;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: flex-start;
-  // height: 28px;
   margin-top: 0;
   padding-top: 0;
+
   margin-bottom: 5px;
   font-weight: 700;
   font-size: 14px;
@@ -102,26 +176,81 @@
   text-transform: uppercase;
   color: var(--white-color);
 
+  @include mq(desktop) {
+    font-size: 20px;
+    align-items: baseline;
+  }
+
+  &::after {
+    @include mq(desktop) {
+      content: ' ';
+      position: absolute;
+      top: -69px;
+      left: 0;
+      width: 17px;
+      height: 16px;
+      border-radius: 50%;
+      background-color: var(--accent-orange-color);
+    }
+  }
+
   &::before {
-    z-index: 1000;
-    content: '';
-    display: block;
-    margin-right: 20px;
-    margin-left: -32px;
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    background-color: var(--accent-orange-color);
+    counter-increment: section;
+    content: counter(section);
+    margin-right: 7px;
+    // z-index: 1000;
+    // content: '';
+    // display: block;
+    // margin-right: 20px;
+    // margin-left: -32px;
+    // width: 12px;
+    // height: 12px;
+    // border-radius: 50%;
+    // background-color: var(--accent-orange-color);
 
     @include mq(tablet) {
-      margin-right: 40px;
-      margin-left: -52px;
+      margin-right: 7px;
+      margin-left: 0;
     }
+
+    @include mq(desktop) {
+      // position: relative;
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-start;
+      font-size: 20px;
+      height: 28px;
+      margin-right: 0;
+      margin-left: 0;
+      margin-top: 10px;
+      margin-bottom: 25px;
+    }
+  }
+
+  @include mq(desktop) {
+    // счетчик
+    &::before {
+      margin-top: 0;
+      padding-top: 0;
+      margin-bottom: 5px;
+      margin-right: 12px;
+      font-weight: 700;
+
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--white-color);
+
+      font-size: 30px;
+      line-height: 0.9;
+    }
+    // font-weight: 700;
+    // font-size: 30px;
+    // line-height: 0.93;
   }
 }
 
 .program__sublist {
-  // outline: 1px solid red;
+  // outline: 1px solid green;
   @include mq(tablet) {
     display: flex;
     flex-direction: column;
@@ -132,8 +261,14 @@
       width: 110px;
     }
   }
+
+  @include mq(desktop) {
+    margin-bottom: 25px;
+    width: 240px;
+  }
 }
 .program__subitem-title {
+  margin-bottom: 10px;
   // outline: 1px solid green;
 }
 .program__name {
@@ -142,7 +277,6 @@
   justify-content: flex-start;
   height: 32px;
   // outline: 1px solid red;
-  margin-bottom: 5px;
   font-weight: 700;
   font-size: 12px;
   line-height: 1.67;
@@ -157,15 +291,24 @@
     width: 12px;
     height: 2px;
     background-color: #ff6b09;
+
+    @include mq(desktop) {
+      width: 20px;
+      height: 2px;
+      margin-right: 9px;
+    }
+  }
+
+  @include mq(desktop) {
+    font-size: 20px;
+    line-height: 1.65;
+    // width: 240px;
+    // height: 32px;
   }
 }
 
-// було
-// .program__subitem {
-//   &:last-child {
-//     margin-bottom: 8px;
-//   }
-// }
+.program__subitem {
+}
 
 .program__subitem:last-child {
   margin-bottom: 8px;
@@ -173,6 +316,10 @@
   @include mq(tablet) {
     margin-bottom: 0;
   }
+
+  // @include mq(desktop) {
+  //   margin-bottom: 25px;
+  // }
 }
 
 .program__descr {
@@ -182,12 +329,12 @@
   font-size: 12px;
   line-height: 1.67;
   letter-spacing: 0.07em;
-  color: rgba(185, 185, 185, 1);
-}
+  color: var(--primary-text-color);
 
-.program__thumb {
-  @include mq(tablet) {
-    display: flex;
-    flex-direction: row;
+  @include mq(desktop) {
+    max-width: 240px;
+    font-size: 18px;
+    line-height: 1.56;
+    letter-spacing: 0.07em;
   }
 }
