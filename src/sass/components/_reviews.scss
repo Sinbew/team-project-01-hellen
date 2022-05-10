@@ -1,0 +1,212 @@
+.reviews {
+  @include margin-auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+
+  @include mq(mobile) {
+    width: 490px;
+  }
+  @include mq(tablet) {
+    width: 768px;
+  }
+}
+
+.reviews__container {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.reviews__title {
+  margin-bottom: 24px;
+
+  text-align: center;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.3;
+  letter-spacing: 0.03em;
+
+  color: #111518;
+}
+
+.reviews__main-img {
+  @include margin-auto;
+  margin-bottom: 30px;
+}
+
+.review__social-network-link {
+  display: block;
+  margin-bottom: 30px;
+}
+
+.reviews__social-network-icon {
+  fill: #4267b2;
+}
+
+.reviews__name {
+  margin-bottom: 16px;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.08em;
+  color: var(--accent-orange-color);
+}
+
+.reviews__main-info {
+  margin-bottom: 16px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.08em;
+  color: #b9b9b9;
+}
+
+.reviews__additional-info {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.reviews__additional-info-link {
+  color: var(--accent-orange-color);
+}
+// Slider
+.slider {
+  position: relative;
+}
+
+.slick-list {
+  overflow: hidden;
+}
+
+.slick-track {
+  display: flex;
+  justify-content: center;
+}
+
+.slick-arrow {
+  position: fixed;
+  // top: 50%;
+  z-index: 10;
+  font-size: 0;
+  height: 20px;
+  width: 30px;
+  background-color: transparent;
+  border: none;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  &.slick-prev {
+    left: 110px;
+    bottom: 18px;
+    background-image: url('../images/icons/arrow-left.svg');
+  }
+
+  &.slick-next {
+    right: 110px;
+    bottom: 18px;
+    background-image: url('../images/icons/arrow-right.svg');
+  }
+}
+
+.slick-dots {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 62px;
+  & button {
+    border: none;
+    font-size: 0px;
+    width: 54px;
+    height: 54px;
+    border-radius: 100%;
+  }
+}
+
+.slick-active {
+  & button {
+    border: 1px solid #ff6b09;
+  }
+}
+
+#slick-slide00 button {
+  background-image: url('../images/mobile/reviews/review-1-1x.png');
+  background-size: contain;
+}
+#slick-slide01 button {
+  background-image: url('../images/mobile/reviews/review-2-1x.png');
+  background-size: contain;
+}
+#slick-slide02 button {
+  background-image: url('../images/mobile/reviews/review-3-1x.png');
+  background-size: contain;
+}
+#slick-slide03 button {
+  background-image: url('../images/mobile/reviews/review-4-1x.png');
+  background-size: contain;
+}
+#slick-slide04 button {
+  background-image: url('../images/mobile/reviews/review-5-1x.png');
+  background-size: contain;
+}
+#slick-slide05 button {
+  background-image: url('../images/mobile/reviews/review-6-1x.png');
+  background-size: contain;
+}
+
+#slick-slide06 button {
+  background-image: url('../images/mobile/reviews/review-7-1x.png');
+  background-size: contain;
+}
+#slick-slide07 button {
+  background-image: url('../images/mobile/reviews/review-1-1x.png');
+  background-size: contain;
+}
+
+slick-slide {
+  @include mq(tablet) {
+    width: 768px;
+  }
+}
+
+/* hiding all bullets by default */
+.slick-dots li {
+  @media screen and (max-width: 489px) {
+    display: none;
+  }
+}
+/* only displaying the active bullets and the 2 bullets next to it */
+.slick-dots li.slick-active,
+.slick-dots li.slick-active + li,
+.slick-dots li.slick-active + li + li {
+  @media screen and (max-width: 489px) {
+    display: block;
+  }
+}
+/* displaying the last three bullets when slick-active class isn't applied to any li before them  */
+.slick-dots li:nth-last-child(1),
+.slick-dots li:nth-last-child(2),
+.slick-dots li:nth-last-child(3) {
+  @media screen and (max-width: 489px) {
+    display: block;
+  }
+}
+/* hiding the last three bullets if slick-active exist before them */
+.slick-dots li.slick-active ~ li:nth-last-child(1),
+.slick-dots li.slick-active ~ li:nth-last-child(2),
+.slick-dots li.slick-active ~ li:nth-last-child(3) {
+  @media screen and (max-width: 489px) {
+    display: none;
+  }
+}
+/* specific conditions to always display the last three bullets */
+.slick-dots li.slick-active + li + li:nth-last-child(3),
+.slick-dots li.slick-active + li + li:nth-last-child(2),
+.slick-dots li.slick-active + li + li:nth-last-child(1),
+.slick-dots li.slick-active + li:nth-last-child(3),
+.slick-dots li.slick-active + li:nth-last-child(2),
+.slick-dots li.slick-active + li:nth-last-child(1) {
+  @media screen and (max-width: 489px) {
+    display: block;
+  }
+}
