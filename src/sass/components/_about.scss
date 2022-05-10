@@ -1,6 +1,14 @@
 .about {
   padding-top: 270px;
   padding-bottom: 0;
+
+  @include mq(tablet) {
+    padding-top: 302px;
+  }
+
+  @include mq(desktop) {
+    padding-top: 329px;
+  }
 }
 
 .about__container {
@@ -128,10 +136,19 @@
   width: 17px;
   height: 14px;
   margin-right: 10px;
+
+  @include mq(desktop) {
+    margin-right: 34px;
+    width: 24px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }
 
 .about__item-text {
   display: flex;
+
   align-items: baseline;
   font-weight: 600;
   font-size: 14px;
@@ -142,6 +159,7 @@
 
   @include mq(tablet) {
     font-size: 12px;
+    align-items: center;
   }
 
   @include mq(desktop) {
