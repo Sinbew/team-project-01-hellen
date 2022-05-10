@@ -12,7 +12,9 @@
   @include mq (desktop) {
     padding-top: 100px;
 
-    background-image: linear-gradient(to bottom, #111518 560px, #ffffff 150px);
+    background-image: url(../images/icons/icon-campfire-desktop.svg),linear-gradient(to bottom, #111518 560px, #ffffff 150px);
+    background-position: right;
+    background-repeat: no-repeat;
   }  
 }
 
