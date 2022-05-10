@@ -1,5 +1,9 @@
 .advantages {
   padding-bottom: 44px;
+
+  @include mq (desktop) {
+    padding-bottom: 175px;
+  }  
 }
 
 .advantages__container {
@@ -10,6 +14,11 @@
     padding-left: 40px;
     padding-right: 40px;
   }
+
+  @include mq (desktop) {
+    padding-left: 183px;
+    padding-right: 153px;
+  }  
 }
 
 .advantages__list {
@@ -21,6 +30,11 @@
     flex-wrap: nowrap;
     gap: 21px;
   }  
+
+  @include mq (desktop) {
+    flex-wrap: nowrap;
+    gap: 0;
+  } 
 }
 
 .advantages__item {
@@ -30,6 +44,11 @@
   @include mq (tablet) {
     width: 216px;
   }
+
+  @include mq (desktop) {
+    width: 448px;
+  }
+
 }
 
 .advantages__item::before {
@@ -39,24 +58,49 @@
   height: 60px;
 
   margin-right: 10px;
+
+  @include mq (desktop) {
+    width: 100px;
+    height: 102px;
+
+    margin-right: -20px;
+  }
 }
 
 .advantages__item--authors::before {
   background-image: url(../images/icons/autors.svg);
   background-size: contain;
   background-repeat: no-repeat;
+
+  @include mq (desktop) {
+    background-image: url(../images/icons/autors-desktop.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
 }
 
 .advantages__item--teaching::before {
   background-image: url(../images/icons/teaching.svg);
   background-size: contain;
   background-repeat: no-repeat;
+
+  @include mq (desktop) {
+    background-image: url(../images/icons/teaching-desktop.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
 }
 
 .advantages__item--financial::before {
   background-image: url(../images/icons/financial.svg);
   background-size: contain;
   background-repeat: no-repeat;
+
+  @include mq (desktop) {
+    background-image: url(../images/icons/financial-desktop.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
 }
 
 .advantages__text {
@@ -66,16 +110,32 @@
   letter-spacing: 0.08em;
 
   color: var(--title-color);
+
+  @include mq (desktop) {
+    font-size: 20px;
+  }
 }
 
 .advantages__text--authors {
   width: 146px;
+
+  @include mq (desktop) {
+    width: 240px;
+  }  
 }
 
 .advantages__text--teaching {
   width: 80px;
+
+  @include mq (desktop) {
+    width: 240px;
+  }
 }
 
 .advantages__text--financial {
   width: 90px;
+
+  @include mq (desktop) {
+    width: 240px;
+  }  
 }

@@ -8,7 +8,14 @@
 
     background-image: linear-gradient(to bottom, #111518 340px, #ffffff 150px);
   }
+
+  @include mq (desktop) {
+    padding-top: 100px;
+
+    background-image: linear-gradient(to bottom, #111518 560px, #ffffff 150px);
+  }  
 }
+
 
 .problems__titel {
   margin-bottom: 25px;
@@ -24,6 +31,14 @@
   @include mq (tablet) {
     width: 560px;
   }  
+
+  @include mq (desktop) {
+    width: 810px;
+
+    margin-bottom: 75px;
+
+    font-size: 46px;
+  } 
 }
 
 .problems__titel--accent {
@@ -61,6 +76,18 @@
 
     gap: 24px 15px;
   }
+
+  @include mq (tablet) {
+    padding-top: 70px;
+    padding-left: 114px;
+    padding-right: 112px;
+    padding-bottom: 62px;
+
+    font-size: 20px;
+    line-height: 1.2;
+
+    gap: 32px 40px;
+  }
 }
 
 .problems__item::before {
@@ -75,5 +102,9 @@
 
   @include mq (tablet) {
     width: 229px;
+  }
+
+  @include mq (desktop) {
+    width: 336px;
   }
 }
