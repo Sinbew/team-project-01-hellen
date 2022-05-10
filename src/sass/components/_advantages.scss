@@ -1,40 +1,42 @@
 .advantages {
   padding-bottom: 44px;
 
-  @include mq (desktop) {
+  @include mq(desktop) {
     padding-bottom: 175px;
-  }  
+  }
 }
-
 
 .advantages__list {
   display: flex;
   flex-wrap: wrap;
   gap: 25px;
+  max-width: 216px;
 
-  @include mq (tablet) {
+  @include mq(tablet) {
     flex-wrap: nowrap;
     gap: 21px;
-  }  
+    max-width: fit-content;
+  }
 
-  @include mq (desktop) {
+  @include mq(desktop) {
     flex-wrap: nowrap;
     gap: 0;
-  } 
+  }
 }
 
 .advantages__item {
+  position: relative;
+
   display: flex;
   align-items: center;
 
-  @include mq (tablet) {
+  @include mq(tablet) {
     width: 216px;
   }
 
-  @include mq (desktop) {
+  @include mq(desktop) {
     width: 448px;
   }
-
 }
 
 .advantages__item::before {
@@ -45,7 +47,7 @@
 
   margin-right: 10px;
 
-  @include mq (desktop) {
+  @include mq(desktop) {
     width: 100px;
     height: 102px;
 
@@ -58,7 +60,7 @@
   background-size: contain;
   background-repeat: no-repeat;
 
-  @include mq (desktop) {
+  @include mq(desktop) {
     background-image: url(../images/icons/autors-desktop.svg);
     background-size: contain;
     background-repeat: no-repeat;
@@ -70,7 +72,7 @@
   background-size: contain;
   background-repeat: no-repeat;
 
-  @include mq (desktop) {
+  @include mq(desktop) {
     background-image: url(../images/icons/teaching-desktop.svg);
     background-size: contain;
     background-repeat: no-repeat;
@@ -82,7 +84,7 @@
   background-size: contain;
   background-repeat: no-repeat;
 
-  @include mq (desktop) {
+  @include mq(desktop) {
     background-image: url(../images/icons/financial-desktop.svg);
     background-size: contain;
     background-repeat: no-repeat;
@@ -97,23 +99,25 @@
 
   color: var(--title-color);
 
-  @include mq (desktop) {
+  @include mq(desktop) {
     font-size: 20px;
+    position: absolute;
+    left: 81px;
   }
 }
 
 .advantages__text--authors {
   width: 146px;
 
-  @include mq (desktop) {
+  @include mq(desktop) {
     width: 240px;
-  }  
+  }
 }
 
 .advantages__text--teaching {
   width: 80px;
 
-  @include mq (desktop) {
+  @include mq(desktop) {
     width: 240px;
   }
 }
@@ -121,7 +125,7 @@
 .advantages__text--financial {
   width: 90px;
 
-  @include mq (desktop) {
+  @include mq(desktop) {
     width: 240px;
-  }  
+  }
 }
