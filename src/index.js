@@ -1,11 +1,9 @@
 import './sass/main.scss';
 // Slider
 $('.slider').slick({
-    arrows: false,
+    arrows: true,
     dots: true,
-    autoplay: true,
     infinite: true,
     fade: true,
     cssEase: 'linear',
-
 });
