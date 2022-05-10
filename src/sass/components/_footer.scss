@@ -113,7 +113,7 @@
   position: relative;
   width: 40px;
   height: 40px;
-  background-image: url(../images/Icons/instagram-1x.png);
+  background-image: url(../images/icons/instagram-1x.png);
   background-repeat: no-repeat;
   background-size: contain;
 
@@ -132,7 +132,7 @@
   }
 
   @include mq(retina) {
-    background-image: url(../images/Icons/instagram-2x.png);
+    background-image: url(../images/icons/instagram-2x.png);
   }
 }
 
