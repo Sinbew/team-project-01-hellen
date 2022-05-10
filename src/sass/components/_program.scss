@@ -3,11 +3,10 @@
   background-color: rgba(17, 21, 24, 1);
   //   background-color: teal;
   padding-top: 50px;
-  padding-bottom: 50px;
-  height: 2050px;
+  padding-bottom: 537px;
 
   @include mq(tablet) {
-    height: 1355px;
+    padding-bottom: 392px;
   }
 }
 

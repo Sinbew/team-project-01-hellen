@@ -2,17 +2,25 @@
   z-index: 1000;
   position: relative;
   padding-bottom: 0;
+
+  @include mq(tablet) {
+  }
   //   outline: 2px dashed green;
 }
 
-.container-benefits {
+.container__benefits {
   position: absolute;
   top: -585px;
   transform: translateX(-50%);
   display: block;
   left: 50%;
-  // width: 350px;
+
+  @include mq(tablet) {
+    top: -400px;
+    left: 50%;
+  }
 }
+
 .benefits__list {
   // счетчик
   counter-reset: section;
@@ -26,6 +34,14 @@
   background-color: var(--white-color);
   padding: 20px 14px 20px 30px;
   box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
+
+  @include mq(tablet) {
+    display: flex;
+    flex-wrap: wrap;
+
+    padding: 35px 118px 40px 98px;
+    width: 688px;
+  }
 }
 .benefits__item {
   // outline: 1 solid green;
@@ -51,6 +67,42 @@
 
   &:last-child {
     margin-bottom: 0;
+  }
+
+  &:nth-child(-n + 2) {
+    @include mq(tablet) {
+      margin-bottom: 38px;
+    }
+  }
+
+  &:nth-child(3) {
+    @include mq(tablet) {
+      margin-bottom: 50px;
+    }
+  }
+  &:nth-child(4) {
+    @include mq(tablet) {
+      margin-bottom: 50px;
+    }
+  }
+
+  &:nth-child(2n) {
+    @include mq(tablet) {
+      margin-right: 0;
+      width: 216px;
+    }
+  }
+
+  &:nth-last-child(-n + 2) {
+    @include mq(tablet) {
+      margin-bottom: 0;
+    }
+  }
+
+  @include mq(tablet) {
+    outline: 1px solid red;
+    width: 236px;
+    margin-right: 20px;
   }
 }
 
@@ -86,6 +138,10 @@
   align-items: flex-end;
   width: 280px;
   padding-top: 88px;
+
+  @include mq(tablet) {
+    width: 688px;
+  }
 }
 
 .program__title-benefits {
@@ -96,10 +152,18 @@
   line-height: 1.36;
   letter-spacing: 0.03em;
   color: var(--white-color);
+
+  @include mq(tablet) {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    font-size: 26px;
+    line-height: 1.3;
+    text-align: center;
+  }
 }
 .program__img {
   position: absolute;
-  // margin-right: -20px;
   right: -20px;
   top: 5px;
   width: 120px;
