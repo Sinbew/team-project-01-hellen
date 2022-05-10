@@ -37,7 +37,7 @@
   }
 }
 .program__list {
-  outline: 1px solid yellow;
+  // outline: 1px solid yellow;
   position: relative;
   padding-left: 105px;
 
@@ -121,7 +121,7 @@
 }
 
 .program__sublist {
-  outline: 1px solid red;
+  // outline: 1px solid red;
   @include mq(tablet) {
     display: flex;
     flex-direction: column;
@@ -134,7 +134,7 @@
   }
 }
 .program__subitem-title {
-  outline: 1px solid green;
+  // outline: 1px solid green;
 }
 .program__name {
   display: flex;
@@ -185,7 +185,7 @@
   color: rgba(185, 185, 185, 1);
 }
 
-.thumb-test {
+.program__thumb {
   @include mq(tablet) {
     display: flex;
     flex-direction: row;
