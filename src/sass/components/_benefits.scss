@@ -1,7 +1,6 @@
 .section__benefits {
-  z-index: 1000;
+  // outline: 2px solid tomato;
   position: relative;
-
   padding-top: 0;
   padding-bottom: 0;
 
@@ -19,7 +18,7 @@
 
 .container__benefits {
   position: relative;
-  outline: 1px solid red;
+  // outline: 1px solid yellowgreen;
 
   &::before {
     overflow: hidden;
@@ -54,6 +53,7 @@
     }
 
     @include mq(desktop) {
+      overflow: hidden;
       top: -360px;
       left: -163px;
       width: 672px;
@@ -67,12 +67,18 @@
       }
     }
   }
+
+  // test
+  // test
+  @include mq(desktop) {
+    height: 422px;
+  }
+  // test
+  // test
 }
 
 .benefits__list {
-  z-index: 10000;
-  // overflow: hidden;
-  outline: 1px solid green;
+  // outline: 1px solid green;
   margin-left: auto;
   margin-right: auto;
   // счетчик
@@ -101,6 +107,10 @@
     justify-content: flex-start;
     padding: 70px 82px 70px 84px;
     width: 1314px;
+
+    position: absolute;
+    top: 0px;
+    left: 20px;
   }
 }
 .benefits__item {
@@ -220,6 +230,11 @@
 
 .benefits__thumb {
   @include mq(tablet) {
+    width: 688px;
+  }
+
+  @include mq(desktop) {
+    // position: absolute;
     width: 688px;
   }
 }
