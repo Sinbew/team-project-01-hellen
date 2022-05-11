@@ -4,15 +4,17 @@
   background-color: rgba(17, 21, 24, 1);
   //   background-color: teal;
   padding-top: 50px;
-  padding-bottom: 537px;
+  // padding-bottom: 537px;
+  padding-bottom: 50px;
+  // outline: 3px dashed green;
 
   @include mq(tablet) {
-    padding-bottom: 392px;
+    padding-bottom: 189px;
   }
 
   @include mq(desktop) {
     padding-top: 120px;
-    padding-bottom: 363px;
+    padding-bottom: 164px;
   }
 }
 
