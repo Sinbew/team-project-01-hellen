@@ -2,6 +2,7 @@
   padding-top: 50px;
   padding-bottom: 50px;
   text-align: center;
+  @include margin-auto;
 
   @include mq(mobile) {
     width: 490px;
@@ -98,7 +99,6 @@
 
 .reviews__social-network-icon {
   fill: #4267b2;
-  transform-origin: center;
 
   @include mq(tablet) {
     width: 50px;
