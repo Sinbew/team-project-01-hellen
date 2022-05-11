@@ -1,4 +1,5 @@
 .section__benefits {
+  top: -1px;
   // outline: 2px solid tomato;
   position: relative;
   padding-top: 0;
@@ -110,7 +111,8 @@
 
     position: absolute;
     top: 0px;
-    left: 20px;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
 .benefits__item {
@@ -231,6 +233,8 @@
 .benefits__thumb {
   @include mq(tablet) {
     width: 688px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   @include mq(desktop) {
