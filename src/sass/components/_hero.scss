@@ -14,7 +14,7 @@
     }
   }
 
-  @media screen and (min-width: 491px) {
+  @media screen and (min-width: 490px) {
     background-position: 0px;
   }
 
@@ -103,8 +103,8 @@
 
   &:hover,
   &:focus {
-    background-color: #eb5e00;
-    box-shadow: 1px 10px 31px 1px #d6d6d6;
+    background-color: #ff7c25;
+    box-shadow: 1px 5px 21px 1px #ffd5b9;
   }
 }
 
