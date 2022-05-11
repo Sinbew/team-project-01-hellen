@@ -99,9 +99,12 @@
   border: none;
   cursor: pointer;
 
+  transition: background-color 250ms ease, box-shadow 250ms ease;
+
   &:hover,
   &:focus {
-    background-color: #e26613;
+    background-color: #eb5e00;
+    box-shadow: 1px 10px 31px 1px #d6d6d6;
   }
 }
 
