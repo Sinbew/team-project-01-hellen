@@ -1,5 +1,4 @@
 .reviews {
-  @include margin-auto;
   padding-top: 50px;
   padding-bottom: 50px;
   text-align: center;
@@ -16,7 +15,8 @@
   }
 }
 
-.reviews__container {
+.reviews__card {
+  @include margin-auto;
   padding: 40px;
   height: 100%;
   padding-bottom: 62px;
@@ -98,6 +98,7 @@
 
 .reviews__social-network-icon {
   fill: #4267b2;
+  transform-origin: center;
 
   @include mq(tablet) {
     width: 50px;
