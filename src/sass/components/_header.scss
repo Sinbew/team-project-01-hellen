@@ -22,17 +22,28 @@
     padding-top: 14px;
     padding-bottom: 14px;
     width: 260px;
-    height: 48px;
+
     background-color: transparent;
     color: var(--accent-orange-color);
     font-size: 14px;
     font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
     margin-top: 0px;
     margin-bottom: 0px;
     margin-left: auto;
     line-height: 1.23;
-    margin-left: auto;
+
     margin-right: 40px;
+
+    transition: color 250ms ease, background-color 250ms ease;
+
+    &:hover,
+    &:focus {
+      background-color: var(--accent-orange-color);
+      color: #ffffff;
+      cursor: pointer;
+    }
   }
 }
 .header__nav-desktop {
@@ -61,7 +72,6 @@
     padding-top: 26px;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &:hover,
-    &:focus,
     &:focus {
       color: var(--accent-orange-color);
     }
@@ -85,14 +95,13 @@
 }
 .header__burger-button {
   position: relative;
+
   z-index: 100;
-  width: 40px;
-  height: 30px;
+
   border: none;
   background-color: transparent;
   cursor: pointer;
   @include mq(tablet) {
-    margin-right: 20px;
   }
   @media screen and (min-width: 1366px) {
     display: none;
@@ -104,10 +113,10 @@
 .header__burger-button.is-open {
   position: fixed;
   right: 20px;
-  top: 30px;
+  top: 45px;
   @include mq(tablet) {
-    right: 40px;
-    top: 42px;
+    right: 22px;
+    top: 55px;
   }
 }
 .header__burger-button.is-open .header__burger-open {
@@ -116,19 +125,19 @@
 .header__burger-button.is-open .header__burger-close {
   opacity: 1;
 }
-// Модальное окно
+// Мобильное меню
 .menu {
   position: fixed;
   z-index: 10;
   transform: translateX(100%);
   display: flex;
-  justify-content: center;
+
   flex-direction: column;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  padding-top: 30px;
+  padding-top: 42px;
   padding-bottom: 222.5px;
   transition: 400ms;
   opacity: 0;
@@ -146,7 +155,7 @@
   padding-top: 14px;
   padding-bottom: 14px;
   width: 260px;
-  height: 48px;
+
   background-color: transparent;
   color: var(--accent-orange-color);
   font-size: 12px;

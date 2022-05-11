@@ -60,11 +60,18 @@
 
   @include mq(tablet) {
     width: 334px;
+
     display: flex;
     flex-direction: column;
+
+    padding-top: 40px;
+    padding-bottom: 53px;
   }
 
   @include mq(desktop) {
+    padding-top: 40px;
+    padding-bottom: 106px;
+
     width: 425px;
   }
 }
@@ -72,6 +79,7 @@
 .how__item:hover,
 .how__item:focus {
   background-color: #ff6b09;
+  cursor: pointer;
 }
 
 .how__item:hover .how__icon,
@@ -105,7 +113,7 @@
 .how__item-title {
   margin-left: auto;
   margin-right: auto;
-  flex-grow: 1;
+
   font-weight: 700;
   font-size: 14px;
   line-height: 1.43;
@@ -115,11 +123,24 @@
 
   color: #111518;
 
+  @include mq(tablet-only) {
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+
   @include mq(desktop) {
     font-size: 20px;
     line-height: 1.4;
+    max-width: 259px;
+    flex-grow: 0;
   }
   //   margin-bottom: 19px;
+}
+
+.how__item-title--last {
+  @include mq(desktop) {
+    max-width: 365px;
+  }
 }
 
 // .how__item-title::after {
@@ -143,6 +164,14 @@
   letter-spacing: 0.08em;
 
   color: #b9b9b9;
+  margin-top: 19px;
+
+  @include mq(tablet) {
+    margin-top: 24px;
+
+    padding-right: 20px;
+    padding-left: 20px;
+  }
 
   &::before {
     content: '';
@@ -152,12 +181,20 @@
     background-color: #ff6b09;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 19px;
+
     margin-bottom: 19px;
+
+    @include mq(tablet) {
+      font-size: 18px;
+      line-height: 1.56;
+      margin-bottom: 23px;
+    }
   }
 
   @include mq(desktop) {
     font-size: 18px;
     line-height: 1.56;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 }
