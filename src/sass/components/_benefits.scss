@@ -3,7 +3,7 @@
   position: relative;
   padding-bottom: 0;
 
-  @include mq(tablet) {
+  @include mq(desktop) {
   }
   //   outline: 2px dashed green;
 }
@@ -43,9 +43,17 @@
     padding: 35px 118px 40px 98px;
     width: 688px;
   }
+
+  @include mq(desktop) {
+    top: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 70px 82px 70px 84px;
+    width: 1314px;
+  }
 }
 .benefits__item {
-  // outline: 1 solid green;
   margin-bottom: 36px;
 
   // счетчик
@@ -62,7 +70,12 @@
     font-size: 14px;
     line-height: 1.65;
     letter-spacing: 0.08em;
-    color: #ff6b09;
+    color: var(--accent-orange-color);
+
+    @include mq(desktop) {
+      margin-left: 9px;
+      font-size: 20px;
+    }
   }
   // счетчик
 
@@ -92,6 +105,11 @@
       margin-right: 0;
       width: 216px;
     }
+
+    @include mq(desktop) {
+      margin-right: 40px;
+      width: 356px;
+    }
   }
 
   &:nth-last-child(-n + 2) {
@@ -100,10 +118,20 @@
     }
   }
 
+  &:nth-last-child(3n + 1) {
+    @include mq(desktop) {
+      margin-right: 0;
+    }
+  }
+
   @include mq(tablet) {
-    // outline: 1px solid red;
     width: 236px;
     margin-right: 20px;
+  }
+
+  @include mq(desktop) {
+    width: 356px;
+    margin-right: 40px;
   }
 }
 
@@ -115,16 +143,29 @@
   letter-spacing: 0.07em;
   color: var(--title-color);
 
+  @include mq(desktop) {
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.08em;
+    color: #111518;
+  }
+
   // полоска
   &::before {
-    content: '';
+    content: ' ';
     display: block;
-    top: -22px;
+    top: -23px;
     position: absolute;
-    display: flex;
+    // display: flex;
     width: 14px;
     height: 2px;
-    background-color: #ff6b09;
+    background-color: var(--accent-orange-color);
+
+    @include mq(desktop) {
+      top: -28px;
+      width: 20px;
+      height: 2px;
+    }
   }
 }
 
@@ -133,7 +174,6 @@
 
   margin-left: auto;
   margin-right: auto;
-  //   outline: 2px dashed red;
   display: flex;
   flex-direction: row;
   align-items: flex-end;
@@ -146,7 +186,6 @@
 }
 
 .program__title-benefits {
-  //   outline: 1px solid green;
   width: 180px;
   font-weight: 800;
   font-size: 20px;
@@ -164,6 +203,9 @@
     line-height: 1.3;
     text-align: center;
   }
+  @include mq(desktop) {
+    display: none;
+  }
 }
 .program__img {
   position: absolute;
@@ -177,5 +219,12 @@
     top: -115px;
     width: 384px;
     height: 280px;
+  }
+
+  @include mq(desktop) {
+    left: -502px;
+    top: -170px;
+    width: 672px;
+    height: 502px;
   }
 }
