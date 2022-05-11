@@ -242,48 +242,55 @@
 }
 
 #slick-slide00 button {
-  background-image: url('../images/mobile/reviews/review-1-1x.png');
+  background-image: url('../images/reviews/review1_sm.png');
   background-size: contain;
+  @include mq(retina) {
+    background-image: url('../images/reviews/review1@2x_sm.png');
+  }
 }
 #slick-slide01 button {
-  background-image: url('../images/mobile/reviews/review-2-1x.png');
+  background-image: url('../images/reviews/review2_sm.png');
   background-size: contain;
+  @include mq(retina) {
+    background-image: url('../images/reviews/review2@2x_sm.png');
+  }
 }
 #slick-slide02 button {
-  background-image: url('../images/mobile/reviews/review-3-1x.png');
+  background-image: url('../images/reviews/review3_sm.png');
   background-size: contain;
+  @include mq(retina) {
+    background-image: url('../images/reviews/review3@2x_sm.png');
+  }
 }
 #slick-slide03 button {
-  background-image: url('../images/mobile/reviews/review-4-1x.png');
+  background-image: url('../images/reviews/review4_sm.png');
   background-size: contain;
+  @include mq(retina) {
+    background-image: url('../images/reviews/review4@2x_sm.png');
+  }
 }
 #slick-slide04 button {
-  background-image: url('../images/mobile/reviews/review-5-1x.png');
+  background-image: url('../images/reviews/review5_sm.png');
   background-size: contain;
+  @include mq(retina) {
+    background-image: url('../images/reviews/review5@2x_sm.png');
+  }
 }
 #slick-slide05 button {
-  background-image: url('../images/mobile/reviews/review-6-1x.png');
+  background-image: url('../images/reviews/review6_sm.png');
   background-size: contain;
+  @include mq(retina) {
+    background-image: url('../images/reviews/review6@2x_sm.png');
+  }
 }
 
 #slick-slide06 button {
-  background-image: url('../images/mobile/reviews/review-7-1x.png');
+  background-image: url('../images/reviews/review7_sm.png');
   background-size: contain;
+  @include mq(retina) {
+    background-image: url('../images/reviews/review7@2x_sm.png');
+  }
 }
-#slick-slide07 button {
-  background-image: url('../images/mobile/reviews/review-1-1x.png');
-  background-size: contain;
-}
-
-// slick-slide {
-//   @include mq(mobile) {
-//     width: 490px;
-//     min-height: 313px;
-//   }
-//   @include mq(tablet) {
-//     width: 688px;
-//   }
-// }
 
 /* hiding all bullets by default */
 .slick-dots li {
