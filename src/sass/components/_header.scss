@@ -22,7 +22,7 @@
     padding-top: 14px;
     padding-bottom: 14px;
     width: 260px;
-    height: 48px;
+
     background-color: transparent;
     color: var(--accent-orange-color);
     font-size: 14px;
@@ -33,8 +33,17 @@
     margin-bottom: 0px;
     margin-left: auto;
     line-height: 1.23;
-    margin-left: auto;
+
     margin-right: 40px;
+
+    transition: color 250ms ease, background-color 250ms ease;
+
+    &:hover,
+    &:focus {
+      background-color: var(--accent-orange-color);
+      color: #ffffff;
+      cursor: pointer;
+    }
   }
 }
 .header__nav-desktop {
@@ -63,7 +72,6 @@
     padding-top: 26px;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &:hover,
-    &:focus,
     &:focus {
       color: var(--accent-orange-color);
     }
@@ -87,6 +95,7 @@
 }
 .header__burger-button {
   position: relative;
+
   z-index: 100;
 
   border: none;
@@ -104,10 +113,10 @@
 .header__burger-button.is-open {
   position: fixed;
   right: 20px;
-  top: 30px;
+  top: 45px;
   @include mq(tablet) {
-    right: 40px;
-    top: 42px;
+    right: 22px;
+    top: 55px;
   }
 }
 .header__burger-button.is-open .header__burger-open {
@@ -146,7 +155,7 @@
   padding-top: 14px;
   padding-bottom: 14px;
   width: 260px;
-  height: 48px;
+
   background-color: transparent;
   color: var(--accent-orange-color);
   font-size: 12px;
