@@ -1,7 +1,7 @@
 .hero {
   padding-top: 52px;
 
-  @media screen and (max-width: 1365px) {
+  @media screen and (max-width: 767px) {
     padding-bottom: 107px;
     background-image: url(../images/hero-background/wave-tablet-1x.png);
     background-repeat: no-repeat;
@@ -9,15 +9,26 @@
     width: 100%;
     background-position: -55px;
   }
+  @media screen and (min-width: 740px) {
+    background-position: 0px;
+  }
+  @media screen and (min-width: 768px) {
+    padding-bottom: 107px;
+    background-image: url(../images/hero-background/wave-tablet-1x.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    background-position: 0 -118px;
+  }
 
   @include mq(tablet) {
-    padding-top: 88px;
+    padding-top: 83px;
   }
   @include mq(desktop) {
     background-image: url(../images/hero-background/wave-desktop-1x.png);
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100vw;
+    width: 100%;
   }
 }
 .hero__text-wrap {

@@ -27,6 +27,8 @@
     color: var(--accent-orange-color);
     font-size: 14px;
     font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
     margin-top: 0px;
     margin-bottom: 0px;
     margin-left: auto;
@@ -86,13 +88,11 @@
 .header__burger-button {
   position: relative;
   z-index: 100;
-  width: 40px;
-  height: 30px;
+
   border: none;
   background-color: transparent;
   cursor: pointer;
   @include mq(tablet) {
-    margin-right: 20px;
   }
   @media screen and (min-width: 1366px) {
     display: none;
@@ -116,19 +116,19 @@
 .header__burger-button.is-open .header__burger-close {
   opacity: 1;
 }
-// Модальное окно
+// Мобильное меню
 .menu {
   position: fixed;
   z-index: 10;
   transform: translateX(100%);
   display: flex;
-  justify-content: center;
+
   flex-direction: column;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  padding-top: 30px;
+  padding-top: 42px;
   padding-bottom: 222.5px;
   transition: 400ms;
   opacity: 0;
