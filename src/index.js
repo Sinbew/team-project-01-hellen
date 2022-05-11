@@ -6,4 +6,5 @@ $('.slider').slick({
     infinite: true,
     fade: true,
     cssEase: 'linear',
+    autoplay:true,
 });
