@@ -1,5 +1,10 @@
 .how {
   padding-top: 50px;
+
+  @include mq(desktop) {
+    padding-top: 130px;
+    padding-bottom: 130px;
+  }
 }
 
 .how__title {
