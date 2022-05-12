@@ -177,17 +177,14 @@
 .back-to-top::before {
   position: absolute;
   top: 4px;
-  left: 5px;
+  left: 6px;
   display: block;
   content: "";
+  
   width: 30px;
   height: 30px;
+
   background-image: url(../images/icons/icon-back-to-top.svg);
   background-repeat: no-repeat;
   background-size: contain;
-
-  &:hover,
-  &:focus {
-    fill: black;
-  }
 }
