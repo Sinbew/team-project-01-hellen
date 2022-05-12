@@ -167,6 +167,13 @@
     display: none;
   }
 }
+.menu__nav {
+  padding-top: 50px;
+  padding-left: 20px;
+  @include mq(tablet) {
+    margin: 0 auto;
+  }
+}
 .menu__nav-item {
   color: var(--white-color);
   font-size: 20px;
@@ -183,12 +190,8 @@
     }
   }
 }
-.menu__nav {
-  padding-top: 50px;
-  padding-left: 20px;
-  @include mq(tablet) {
-    margin: 0 auto;
-  }
+.menu__nav-link {
+  color: currentColor;
 }
 .header__logo-white {
   z-index: 1000;
