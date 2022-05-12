@@ -1,35 +1,92 @@
 .section__benefits {
-  z-index: 1000;
+  top: -1px;
+  // outline: 2px solid tomato;
   position: relative;
+  padding-top: 0;
   padding-bottom: 0;
 
+  background-image: linear-gradient(#111518 68%, white 68%);
+
+  @include mq(tablet) {
+    background-image: linear-gradient(#111518 44%, white 44%);
+  }
+
   @include mq(desktop) {
+    background-image: linear-gradient(#111518 50%, white 50%);
   }
   //   outline: 2px dashed green;
 }
 
 .container__benefits {
-  position: absolute;
-  top: -585px;
-  transform: translateX(-50%);
-  display: block;
-  left: 50%;
+  position: relative;
+  // outline: 1px solid yellowgreen;
 
-  @include mq(tablet) {
-    top: -400px;
-    left: 50%;
+  &::before {
+    overflow: hidden;
+    content: '';
+    position: absolute;
+    top: -88px;
+    right: 0;
+    width: 120px;
+    height: 137px;
+    background-image: linear-gradient(to right, rgba(17, 21, 24, 0.5), rgba(17, 21, 24, 0.5)),
+      url(../images/mobile/program/program-mobile-1x.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @include mq(retina) {
+      background-image: linear-gradient(to right, rgba(17, 21, 24, 0.5), rgba(17, 21, 24, 0.5)),
+        url(../images/mobile/program/program-mobile-2x.jpg);
+    }
+
+    @include mq(tablet) {
+      top: -360px;
+      right: -2px;
+      width: 384px;
+      height: 280px;
+      background-image: linear-gradient(to right, rgba(17, 21, 24, 0.5), rgba(17, 21, 24, 0.5)),
+        url(../images/tablet/program/program-tablet-1x.jpg);
+
+      @include mq(retina) {
+        background-image: linear-gradient(to right, rgba(17, 21, 24, 0.5), rgba(17, 21, 24, 0.5)),
+          url(../images/tablet/program/program-tablet-2x.jpg);
+      }
+    }
+
+    @include mq(desktop) {
+      overflow: hidden;
+      top: -360px;
+      left: -163px;
+      width: 672px;
+      height: 502px;
+      background-image: linear-gradient(to right, rgba(17, 21, 24, 0.5), rgba(17, 21, 24, 0.5)),
+        url(../images/desktop/program/program-desktop-1x.jpg);
+
+      @include mq(retina) {
+        background-image: linear-gradient(to right, rgba(17, 21, 24, 0.5), rgba(17, 21, 24, 0.5)),
+          url(../images/desktop/program/program-desktop-2x.jpg);
+      }
+    }
   }
+
+  // test
+  // test
+  @include mq(desktop) {
+    height: 422px;
+  }
+  // test
+  // test
 }
 
 .benefits__list {
+  // outline: 1px solid green;
+  margin-left: auto;
+  margin-right: auto;
   // счетчик
   counter-reset: section;
   list-style-type: upper-alpha;
   // счетчик
-  position: absolute;
-  top: 175px;
-  left: 50%;
-  transform: translateX(-50%);
+
   min-width: 280px;
   background-color: var(--white-color);
   padding: 20px 14px 20px 30px;
@@ -51,6 +108,11 @@
     justify-content: flex-start;
     padding: 70px 82px 70px 84px;
     width: 1314px;
+
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
 .benefits__item {
@@ -156,7 +218,6 @@
     display: block;
     top: -23px;
     position: absolute;
-    // display: flex;
     width: 14px;
     height: 2px;
     background-color: var(--accent-orange-color);
@@ -170,22 +231,21 @@
 }
 
 .benefits__thumb {
-  position: relative;
-
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-end;
-  width: 280px;
-  padding-top: 88px;
-
   @include mq(tablet) {
+    width: 688px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @include mq(desktop) {
+    // position: absolute;
     width: 688px;
   }
 }
 
 .program__title-benefits {
+  margin-right: auto;
+  margin-bottom: 30px;
   width: 180px;
   font-weight: 800;
   font-size: 20px;
@@ -194,8 +254,6 @@
   color: var(--white-color);
 
   @include mq(tablet) {
-    position: absolute;
-    top: 217px;
     margin-left: auto;
     margin-right: auto;
     width: 100%;
@@ -205,26 +263,5 @@
   }
   @include mq(desktop) {
     display: none;
-  }
-}
-.program__img {
-  position: absolute;
-  right: -20px;
-  top: 5px;
-  width: 120px;
-  opacity: 0.5;
-
-  @include mq(tablet) {
-    right: -41px;
-    top: -115px;
-    width: 384px;
-    height: 280px;
-  }
-
-  @include mq(desktop) {
-    left: -502px;
-    top: -170px;
-    width: 672px;
-    height: 502px;
   }
 }

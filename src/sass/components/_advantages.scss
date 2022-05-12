@@ -3,6 +3,15 @@
 
   @include mq(desktop) {
     padding-bottom: 175px;
+    padding-left: 0;
+  }
+}
+
+.advantages__container {
+  padding-left: 52px;
+
+  @include mq(tablet) {
+    padding-left: 20px;
   }
 }
 
