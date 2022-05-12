@@ -1,6 +1,6 @@
 .section__benefits {
   top: -1px;
-  // outline: 2px solid tomato;
+  
   position: relative;
   padding-top: 0;
   padding-bottom: 0;
@@ -14,12 +14,12 @@
   @include mq(desktop) {
     background-image: linear-gradient(#111518 50%, white 50%);
   }
-  //   outline: 2px dashed green;
+  
 }
 
 .container__benefits {
   position: relative;
-  // outline: 1px solid yellowgreen;
+  
 
   &::before {
     overflow: hidden;
@@ -69,17 +69,17 @@
     }
   }
 
-  // test
-  // test
+  
+  
   @include mq(desktop) {
     height: 422px;
   }
-  // test
-  // test
+  
+  
 }
 
 .benefits__list {
-  // outline: 1px solid green;
+  
   margin-left: auto;
   margin-right: auto;
   // счетчик
@@ -122,7 +122,7 @@
   &::before {
     position: relative;
     counter-increment: section;
-    // content: '\2014'counter(section, decimal-leading-zero);
+    
     content: counter(section, decimal-leading-zero);
     display: block;
     margin-top: 0;
@@ -238,7 +238,7 @@
   }
 
   @include mq(desktop) {
-    // position: absolute;
+    
     width: 688px;
   }
 }

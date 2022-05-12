@@ -3,14 +3,14 @@
 
   @media screen and (max-width: 767px) {
     padding-bottom: 107px;
-    background-image: url(../images/hero-background/wave-tablet-1x.png);
+    background-image: url(../images/tablet/hero/wave-tablet-1x.png);
     background-repeat: no-repeat;
     background-size: cover;
 
     background-position: -55px;
 
     @include mq(retina) {
-      background-image: url(../images/hero-background/wave-tablet-2x.png);
+      background-image: url(../images/tablet/hero/wave-tablet-2x.png);
     }
   }
 
@@ -20,14 +20,14 @@
 
   @media screen and (min-width: 768px) {
     padding-bottom: 107px;
-    background-image: url(../images/hero-background/wave-tablet-1x.png);
+    background-image: url(../images/tablet/hero/wave-tablet-1x.png);
     background-repeat: no-repeat;
     background-size: 100% 605px;
 
     background-position: 0 -75px;
 
     @include mq(retina) {
-      background-image: url(../images/hero-background/wave-tablet-2x.png);
+      background-image: url(../images/tablet/hero/wave-tablet-2x.png);
     }
   }
 
@@ -36,12 +36,12 @@
   }
 
   @include mq(desktop) {
-    background-image: url(../images/hero-background/wave-desktop-1x.png);
+    background-image: url(../images/desktop/hero/wave-desktop-1x.png);
     background-repeat: no-repeat;
     background-size: 100% 878px;
 
     @include mq(retina) {
-      background-image: url(../images/hero-background/wave-desktop-2x.png);
+      background-image: url(../images/desktop/hero/wave-desktop-2x.png);
     }
   }
 }

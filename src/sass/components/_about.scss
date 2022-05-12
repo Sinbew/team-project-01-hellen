@@ -11,7 +11,7 @@
   }
 }
 
-.about__container {
+.about__wrapper {
   @include mq(tablet) {
     display: flex;
   }
@@ -30,12 +30,10 @@
 .about__container-right {
   @include mq(tablet) {
     width: 402px;
-    padding-top: 58px;
   }
 
   @include mq(desktop) {
     width: 642px;
-    padding-top: 100px;
   }
 }
 
@@ -214,7 +212,7 @@
   @include mq(desktop) {
     margin-bottom: 27px;
     font-size: 18px;
-    line-height: 1.6;
+    line-height: 1.5;
   }
 }
 
@@ -231,4 +229,9 @@
   text-decoration-line: underline;
 
   color: var(--accent-orange-color);
+
+  @include mq(desktop) {
+    font-size: 18px;
+    line-height: 1.5;
+  }
 }
