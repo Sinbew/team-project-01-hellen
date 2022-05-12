@@ -82,6 +82,8 @@
   &--black {
     font-weight: 700;
     color: #111518;
+
+    width: 258px;
   }
   &--orange {
     font-weight: 700;
@@ -183,6 +185,7 @@
   .hero__text--black {
     display: inline-block;
     font-size: 20px;
+    width: auto;
   }
   .hero__text--orange {
     font-size: 20px;
