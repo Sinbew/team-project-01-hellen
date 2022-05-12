@@ -2,11 +2,9 @@
   overflow: hidden;
   position: relative;
   background-color: rgba(17, 21, 24, 1);
-  //   background-color: teal;
+
   padding-top: 50px;
-  // padding-bottom: 537px;
   padding-bottom: 50px;
-  // outline: 3px dashed green;
 
   @include mq(tablet) {
     padding-bottom: 189px;
@@ -232,7 +230,6 @@
   }
 
   @include mq(desktop) {
-    // margin-bottom: 25px;
     width: 240px;
   }
 
@@ -243,11 +240,6 @@
   }
 }
 .program__subitem-title {
-  // @include mq(desktop) {
-  //   width: 240px;
-  // }
-
-  //
   &:last-child {
     @include mq(desktop) {
       margin-bottom: 0;
@@ -264,11 +256,6 @@
     }
   }
 
-  // @include mq(desktop) {
-  //   margin-bottom: 25px;
-  //   width: 240px;
-  // }
-
   @include mq(tablet) {
     margin-bottom: 5px;
   }
@@ -280,7 +267,6 @@
   }
 }
 .program__name {
-  // outline: 1px solid red;
   display: flex;
   align-items: center;
   justify-content: flex-start;
