@@ -59,8 +59,10 @@
 
   color: var(--title-color);
   margin-bottom: 10px;
-}
 
+  -webkit-animation: text-focus-in 0.8s cubic-bezier(0.55, 0.085, 0.68, 0.53) 0.2s both;
+  animation: text-focus-in 0.8ss cubic-bezier(0.55, 0.085, 0.68, 0.53) 0.2s both;
+}
 .hero__text {
   font-weight: 500;
   font-size: 14px;
@@ -71,6 +73,9 @@
   letter-spacing: 0.08em;
 
   color: #b9b9b9;
+
+  -webkit-animation: text-focus-in 0.8s cubic-bezier(0.55, 0.085, 0.68, 0.53) 0.3s both;
+  animation: text-focus-in 0.8s cubic-bezier(0.55, 0.085, 0.68, 0.53) 0.3s both;
 
   &--black {
     font-weight: 700;
@@ -101,11 +106,19 @@
 
   transition: background-color 250ms ease, box-shadow 250ms ease;
 
+  -webkit-animation: text-focus-in 0.8s cubic-bezier(0.55, 0.085, 0.68, 0.53) 0.6s both;
+  animation: text-focus-in 0.8s cubic-bezier(0.55, 0.085, 0.68, 0.53) 0.6s both;
+
   &:hover,
   &:focus {
     background-color: #ff7c25;
     box-shadow: 1px 5px 21px 1px #ffd5b9;
   }
+}
+
+.hero__image-wrap {
+  -webkit-animation: slide-in-right 1s ease-in both;
+  animation: slide-in-right 1s ease-in both;
 }
 
 .hero__image {
