@@ -48,8 +48,7 @@
 }
 
 .problems__list {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
   gap: 15px;
 
   counter-reset: section;
@@ -76,6 +75,8 @@
     padding-right: 46px;
     padding-bottom: 30px;
 
+    grid-template-columns: repeat(2, 229px);
+
     gap: 24px 15px;
   }
 
@@ -88,6 +89,7 @@
     font-size: 20px;
     line-height: 1.2;
 
+    grid-template-columns: repeat(3, 320px);
     gap: 32px 40px;
   }
 }
@@ -104,13 +106,3 @@
   }  
 }
 
-.problems__item {
-
-  @include mq (tablet) {
-    width: 229px;
-  }
-
-  @include mq (desktop) {
-    width: 320px;
-  }
-}
