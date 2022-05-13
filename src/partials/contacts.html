@@ -1,4 +1,4 @@
-<section class="section contacts">
+<section id="contacts" class="section contacts">
   <div class="container contacts__container">
     <b class="contacts__title">
       Registration for a <span class="contacts-accent">free</span> phone
@@ -16,12 +16,21 @@
           name="user-name"
           placeholder="Name*"
           pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
-          title="Username must be two words separated by space."
+          title="Name must be two words separated by space."
+          required
         />
       </label>
 
       <label class="contacts__form-label contacts__form-label-phone">
-        <input class="contacts__form-input" type="text" name="tel" placeholder="Phone*" />
+        <input
+          class="contacts__form-input"
+          type="text"
+          name="tel"
+          placeholder="Phone*"
+          pattern="[0-9-+]{13}"
+          title="Please type the phone in requested format +380"
+          required
+        />
       </label>
 
       <button class="contacts__button" type="submit">i want a free lesson</button>

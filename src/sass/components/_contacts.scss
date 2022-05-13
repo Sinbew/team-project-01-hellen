@@ -149,6 +149,11 @@
   border: 1px solid var(--white-color);
   outline: none;
 
+  transition: border 250ms ease;
+  &:focus {
+    border: 1px solid #d65e0f;
+  }
+
   @include mq(tablet) {
     width: 390px;
   }
@@ -160,21 +165,29 @@
   }
 }
 
-.contacts__form-input:invalid {
-  border: 1px solid red;
+.contacts__form-input:focus:invalid {
+  border: 1px solid rgb(255, 93, 81);
+  background-color: rgba(177, 81, 74, 0.075);
 }
-
+.contacts__form-input:focus:valid {
+  border: 1px solid rgb(45, 226, 90);
+  background-color: rgba(39, 80, 55, 0.452);
+}
 .contacts__form-input::placeholder {
   font-weight: 600;
   font-size: 14px;
-  line-height: 17px;
-  /* identical to box height */
+  line-height: 1.21;
 
   display: flex;
   align-items: center;
   letter-spacing: 0.08em;
 
   color: var(--white-color);
+
+  transition: opacity 250ms ease;
+}
+.contacts__form-input:focus::placeholder {
+  opacity: 0.5;
 }
 
 .contacts__button {

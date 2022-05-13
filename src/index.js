@@ -1,11 +1,10 @@
 import './sass/main.scss';
 // Slider
 $('.slider').slick({
-    arrows: false,
-    dots: true,
-    autoplay: true,
-    infinite: true,
-    fade: true,
-    cssEase: 'linear',
-
+  arrows: true,
+  dots: true,
+  infinite: true,
+  fade: true,
+  cssEase: 'linear',
+  autoplay: true,
 });

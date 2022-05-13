@@ -1,41 +1,128 @@
 .section__benefits {
-  z-index: 1000;
+  top: -1px;
+  
   position: relative;
+  padding-top: 0;
   padding-bottom: 0;
-  //   outline: 2px dashed green;
+
+  background-image: linear-gradient(#111518 68%, white 68%);
+
+  @include mq(tablet) {
+    background-image: linear-gradient(#111518 44%, white 44%);
+  }
+
+  @include mq(desktop) {
+    background-image: linear-gradient(#111518 50%, white 50%);
+  }
+  
 }
 
-.container-benefits {
-  position: absolute;
-  top: -585px;
-  transform: translateX(-50%);
-  display: block;
-  left: 50%;
-  // width: 350px;
+.container__benefits {
+  position: relative;
+  
+
+  &::before {
+    overflow: hidden;
+    content: '';
+    position: absolute;
+    top: -88px;
+    right: 0;
+    width: 120px;
+    height: 137px;
+    background-image: linear-gradient(to right, rgba(17, 21, 24, 0.5), rgba(17, 21, 24, 0.5)),
+      url(../images/mobile/program/program-mobile-1x.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @include mq(retina) {
+      background-image: linear-gradient(to right, rgba(17, 21, 24, 0.5), rgba(17, 21, 24, 0.5)),
+        url(../images/mobile/program/program-mobile-2x.jpg);
+    }
+
+    @include mq(tablet) {
+      top: -360px;
+      right: -2px;
+      width: 384px;
+      height: 280px;
+      background-image: linear-gradient(to right, rgba(17, 21, 24, 0.5), rgba(17, 21, 24, 0.5)),
+        url(../images/tablet/program/program-tablet-1x.jpg);
+
+      @include mq(retina) {
+        background-image: linear-gradient(to right, rgba(17, 21, 24, 0.5), rgba(17, 21, 24, 0.5)),
+          url(../images/tablet/program/program-tablet-2x.jpg);
+      }
+    }
+
+    @include mq(desktop) {
+      overflow: hidden;
+      top: -360px;
+      left: -163px;
+      width: 672px;
+      height: 502px;
+      background-image: linear-gradient(to right, rgba(17, 21, 24, 0.5), rgba(17, 21, 24, 0.5)),
+        url(../images/desktop/program/program-desktop-1x.jpg);
+
+      @include mq(retina) {
+        background-image: linear-gradient(to right, rgba(17, 21, 24, 0.5), rgba(17, 21, 24, 0.5)),
+          url(../images/desktop/program/program-desktop-2x.jpg);
+      }
+    }
+  }
+
+  
+  
+  @include mq(desktop) {
+    height: 422px;
+  }
+  
+  
 }
+
 .benefits__list {
+  
+  margin-left: auto;
+  margin-right: auto;
   // счетчик
   counter-reset: section;
   list-style-type: upper-alpha;
   // счетчик
-  position: absolute;
-  top: 175px;
-  left: 50%;
-  transform: translateX(-50%);
+
   min-width: 280px;
   background-color: var(--white-color);
   padding: 20px 14px 20px 30px;
   box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
+
+  @include mq(tablet) {
+    top: 275px;
+    display: flex;
+    flex-wrap: wrap;
+
+    padding: 35px 118px 40px 98px;
+    width: 688px;
+  }
+
+  @include mq(desktop) {
+    top: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 70px 82px 70px 84px;
+    width: 1314px;
+
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
 .benefits__item {
-  // outline: 1 solid green;
   margin-bottom: 36px;
 
   // счетчик
   &::before {
     position: relative;
-    // outline: 1px solid teal;
     counter-increment: section;
+    
     content: counter(section, decimal-leading-zero);
     display: block;
     margin-top: 0;
@@ -45,12 +132,68 @@
     font-size: 14px;
     line-height: 1.65;
     letter-spacing: 0.08em;
-    color: #ff6b09;
+    color: var(--accent-orange-color);
+
+    @include mq(desktop) {
+      margin-left: 9px;
+      font-size: 20px;
+    }
   }
   // счетчик
 
   &:last-child {
     margin-bottom: 0;
+  }
+
+  &:nth-child(-n + 2) {
+    @include mq(tablet) {
+      margin-bottom: 38px;
+    }
+  }
+
+  &:nth-child(3) {
+    @include mq(tablet) {
+      margin-bottom: 50px;
+    }
+  }
+  &:nth-child(4) {
+    @include mq(tablet) {
+      margin-bottom: 50px;
+    }
+  }
+
+  &:nth-child(2n) {
+    @include mq(tablet) {
+      margin-right: 0;
+      width: 216px;
+    }
+
+    @include mq(desktop) {
+      margin-right: 40px;
+      width: 356px;
+    }
+  }
+
+  &:nth-last-child(-n + 2) {
+    @include mq(tablet) {
+      margin-bottom: 0;
+    }
+  }
+
+  &:nth-last-child(3n + 1) {
+    @include mq(desktop) {
+      margin-right: 0;
+    }
+  }
+
+  @include mq(tablet) {
+    width: 236px;
+    margin-right: 20px;
+  }
+
+  @include mq(desktop) {
+    width: 356px;
+    margin-right: 40px;
   }
 }
 
@@ -62,46 +205,63 @@
   letter-spacing: 0.07em;
   color: var(--title-color);
 
+  @include mq(desktop) {
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.08em;
+    color: #111518;
+  }
+
   // полоска
   &::before {
-    content: '';
+    content: ' ';
     display: block;
     top: -23px;
     position: absolute;
-    display: flex;
     width: 14px;
     height: 2px;
-    background-color: #ff6b09;
+    background-color: var(--accent-orange-color);
+
+    @include mq(desktop) {
+      top: -28px;
+      width: 20px;
+      height: 2px;
+    }
   }
 }
 
 .benefits__thumb {
-  position: relative;
+  @include mq(tablet) {
+    width: 688px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-  margin-left: auto;
-  margin-right: auto;
-  //   outline: 2px dashed red;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-end;
-  width: 280px;
-  padding-top: 88px;
+  @include mq(desktop) {
+    
+    width: 688px;
+  }
 }
 
 .program__title-benefits {
-  //   outline: 1px solid green;
+  margin-right: auto;
+  margin-bottom: 30px;
   width: 180px;
   font-weight: 800;
   font-size: 20px;
   line-height: 1.36;
   letter-spacing: 0.03em;
   color: var(--white-color);
-}
-.program__img {
-  position: absolute;
-  // margin-right: -20px;
-  right: -20px;
-  top: 5px;
-  width: 120px;
-  opacity: 0.5;
+
+  @include mq(tablet) {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    font-size: 26px;
+    line-height: 1.3;
+    text-align: center;
+  }
+  @include mq(desktop) {
+    display: none;
+  }
 }

@@ -1,46 +1,69 @@
-<section class="section about">
+<section id="about" class="section about">
   <div class="container about__container">
     <h2 class="about__title">Teacher</h2>
-    <picture>
-      <source
-        srcset="
-          ./images/mobile/about/about-mobile-1x.jpg 1x,
-          ./images/mobile/about/about-mobile-2x.jpg 2x
-        "
-        media="(max-width:767px)"
-      />
-      <img
-        class="about__img"
-        src="./images/mobile/about/about-mobile-1x.jpg"
-        alt="teacher"
-        width="243"
-        height="305"
-        loading="lazy"
-      />
-    </picture>
-    <h3 class="about__sub-title">Elena Moreva</h3>
-    <ul class="about__list">
-      <li class="about__item">
-        <p class="about__item-text">6 yeards of experience in preparing students for UPE</p>
-      </li>
-      <li class="about__item">
-        <p class="about__item-text">Own result of passing VNO - 197 points 2 years in a row</p>
-      </li>
-      <li class="about__item">
-        <p class="about__item-text about__item-text--after">
-          Passed excellent at the international analogue of UPE - Cambridge PET (Preliminary English
-          Test)
-        </p>
-      </li>
-    </ul>
-    <p class="about__text">
-      Graduated from the Institute of International Relations of the NAU with a degree in
-      translator-analyst.In spare time takes courses from the best universities in the world on
-      effective teaching and essay writing techniques.Completed: English Grammar and Essay Writing
-      (Berkeley), English Grammar & Style (The University of Queesland), How to Write an Essay
-      (Berkeley), Academic and Business Writing (Berkeley), The Art of Teaching (GEMS education),
-      Powerful Tools for Teaching and Learning (University of Houston).
-    </p>
-    <a class="about__link" href="#">Cambrige English Entry Level Certificate</a>
+    <div class="about__wrapper">
+      <div class="about__container-left">
+        <picture>
+          <source
+            srcset="
+              ./images/desktop/about/about-desktop-1x.jpg 1x,
+              ./images/desktop/about/about-desktop-2x.jpg 2x
+            "
+            media="(min-width:1366px)"
+          />
+          <source
+            srcset="
+              ./images/mobile/about/about-mobile-1x.jpg 1x,
+              ./images/mobile/about/about-mobile-2x.jpg 2x
+            "
+            media="(max-width:1365px)"
+          />
+          <img
+            class="about__img"
+            src="./images/mobile/about/about-mobile-1x.jpg"
+            alt="teacher"
+            width="243px"
+            height="305px"
+            loading="lazy"
+          />
+        </picture>
+      </div>
+      <div class="about__container-right">
+        <h3 class="about__sub-title">Elena Moreva</h3>
+        <ul class="about__list">
+          <li class="about__item">
+            <p class="about__item-text">6 yeards of experience in preparing students for UPE</p>
+          </li>
+          <li class="about__item">
+            <p class="about__item-text">Own result of passing VNO - 197 points 2 years in a row</p>
+          </li>
+          <li class="about__item">
+            <p class="about__item-text">
+              Passed excellent at the international analogue of UPE - Cambridge PET (Preliminary
+              English Test)
+            </p>
+          </li>
+        </ul>
+        <div class="about__sub-text about__sub-text--before">
+          <p class="about__text">
+            Graduated from the Institute of International Relations of the NAU with a degree in
+            translator-analyst.
+          </p>
+          <p class="about__text">
+            In spare time takes courses from the best universities in the world on effective
+            teaching and essay writing techniques.
+          </p>
+          <p class="about__text">
+            Completed: English Grammar and Essay Writing (Berkeley), English Grammar & Style (The
+            University of Queesland), How to Write an Essay (Berkeley), Academic and Business
+            Writing (Berkeley), The Art of Teaching (GEMS education), Powerful Tools for Teaching
+            and Learning (University of Houston).
+          </p>
+        </div>
+        <a class="about__link" href="./images/goit-gift/goit-love.jpg" target="_blank"
+          >Cambrige English Entry Level Certificate</a
+        >
+      </div>
+    </div>
   </div>
 </section>
